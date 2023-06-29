@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  .required{
+    color : blue;
+  }
+</style>
+
+<body>
+  <form method="post" id="form">
+<h1>Письмо Санте</h1>
+<p>Дорогой друг, не стесняйся и расскажи Санте о том, кто ты и о том, что ты хочешь получить на Рождество.</p>
+  <div>
+    <span class="required">*</span>
+    <input required type="email" placeholder="Логин">
+  <div>
+    <br>
+    <span class="required">*</span>
+    <input required type="password" placeholder="Пароль">
+  </div>
+  <br>
+    <div>
+      <span class="required">*</span>
+      <input required type="text" placeholder="Имя">
+    </div>
+  </div>
+  <br>
+    Пол:
+    <div>
+      <input id="gender" type="radio" name ="gender">
+      <label for="gender"> Мальчик</label>
+
+      <input id="gender2" type="radio" name="gender">
+      <label for="gender2">Девочка</label>
+    </div>
+    <br>
+    <div>
+      <input type="date" id="dateOfBirth" name="dateOfBirth"
+      value="2000-01-01"
+      min="1950-01-01" max="2023-06-29">
+<label for="dateOfBirth">Дата рождения</label>
+    </div>
+    <br>
+    <div>
+      <select name="placeOfBirth" id="form">
+        <option value="Peterburg">Санкт-Петербург</option>
+        <option value="Moscow">Москва</option>
+        <option value="Rostov">Ростов - на - Дону</option>
+      </select>
+    </div>
+    <div>
+      <br>
+      Выбирите цвет своей новой игрушки:
+    </div>
+    <br>
+    <div>
+      <input id="color" type="color" name="favorite_color" value="#e66465">
+      <label for="color">Шапочка</label>
+    </div>
+    <br>
+    <div>
+      <input id="color2" type="color" name="favorite_color" value="#e66535">
+      <label for="color2">Костюм</label>
+    </div>
+    <br>
+    Ты был хорошим ребенком?
+    <br>
+    <div>
+      <input id="yes" type="radio" name="goodChild">
+      <label for="yes">Да</label>
+      <input id="no" type="radio" name="goodChild">
+      <label for="no">Нет</label>
+    </div>
+    <br>
+    <div>
+      <label>
+        <input  type="submit" value="Отправить письмо Санте">
+        <a href="/greetings.html"></a>
+      </label>
+    </div>
+  </form>
+</body>
+</html>
